@@ -101,12 +101,18 @@ namespace projeto_clinica
         private void Button2_Click(object sender, EventArgs e)
         {
            EditarCliente edi = new EditarCliente(int.Parse(EdtIdCli.Text));
-            edi.Show(); 
+            edi.ShowDialog();
+            DadosListView();
         }
 
         private void TextBox1_KeyUp(object sender, KeyEventArgs e)
         {
             DadosListView();
+        }
+
+        private void EdtIdCli_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

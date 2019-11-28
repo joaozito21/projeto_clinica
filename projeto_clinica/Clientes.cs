@@ -22,6 +22,35 @@ namespace projeto_clinica
         public string cid_cli { get; set; }
         public string dat_cli { get; set; }
         public string tel_cli { get; set; }
+
+        public List<string> CarregaclisLis()
+        {
+
+            SqlConnection conexao = new SqlConnection(caminho);
+            List<string> LISTA = new List<string>();
+            conexao.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+
+            comando.CommandText = "SELECT NOME_CLI FROM	CLIENTES";
+
+
+
+
+            comando.CommandType = CommandType.Text;
+            SqlDataReader LINHA = comando.ExecuteReader();
+            if (LINHA != null)
+            {
+                while (LINHA.Read())
+                {
+                    LISTA.Add(LINHA.GetString(0));
+                }
+            }
+
+            return LISTA;
+
+        }
+
         public void CadastrarDados(string nome,string end,string est,string sex,string cid,string dat,string tel)
         {
             SqlConnection conexao = new SqlConnection(caminho);
@@ -41,7 +70,7 @@ namespace projeto_clinica
             comando.Parameters.Add(new SqlParameter("@dat",dat));
             comando.Parameters.Add(new SqlParameter("@tel", tel));
             comando.ExecuteNonQuery();
-            MessageBox.Show("INSERIDO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("CADASTRADO COM SUCESSO", "AVISO");
             conexao.Close();
         }
 

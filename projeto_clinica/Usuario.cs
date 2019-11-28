@@ -51,7 +51,7 @@ namespace projeto_clinica
 
             comando.ExecuteNonQuery();
 
-            MessageBox.Show("INSERIDO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("CADASTRO SALVO COM SUCESSO", "AVISO");
             conexao.Close();
         }
 

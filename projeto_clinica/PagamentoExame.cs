@@ -37,6 +37,7 @@ namespace projeto_clinica
                 PAG.FecharExame(id_pag);
 
             }
+            this.Close();
         }
 
         private void PagamentoExame_Load(object sender, EventArgs e)

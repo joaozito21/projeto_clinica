@@ -73,7 +73,8 @@ namespace projeto_clinica
         private void Button1_Click_1(object sender, EventArgs e)
         {
             EditaAnimal EDIANI = new EditaAnimal(int.Parse(EDTIDani.Text));
-            EDIANI.Show();
+            EDIANI.ShowDialog();
+            DadosListView();
         }
     }
 }

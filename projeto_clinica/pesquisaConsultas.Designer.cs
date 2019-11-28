@@ -69,7 +69,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(31, 21);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(538, 291);
+            this.listView1.Size = new System.Drawing.Size(879, 238);
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -83,19 +83,19 @@
             // 
             this.data_con.DisplayIndex = 2;
             this.data_con.Text = "data_con";
-            this.data_con.Width = 83;
+            this.data_con.Width = 112;
             // 
             // motivo_con
             // 
             this.motivo_con.DisplayIndex = 3;
             this.motivo_con.Text = "motivo_con";
-            this.motivo_con.Width = 93;
+            this.motivo_con.Width = 195;
             // 
             // NomeCliente
             // 
             this.NomeCliente.DisplayIndex = 1;
             this.NomeCliente.Text = "NomeCliente";
-            this.NomeCliente.Width = 155;
+            this.NomeCliente.Width = 275;
             // 
             // nomeAnimal
             // 
@@ -105,14 +105,14 @@
             // nomeVeterinario
             // 
             this.nomeVeterinario.Text = "nomeVeterinario";
-            this.nomeVeterinario.Width = 108;
+            this.nomeVeterinario.Width = 313;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.EdtIdCli);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(575, 177);
+            this.groupBox2.Location = new System.Drawing.Point(31, 359);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(289, 74);
             this.groupBox2.TabIndex = 10;
@@ -150,7 +150,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(593, 32);
+            this.groupBox1.Location = new System.Drawing.Point(585, 282);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(274, 118);
             this.groupBox1.TabIndex = 9;
@@ -189,9 +189,9 @@
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(578, 277);
+            this.groupBox3.Location = new System.Drawing.Point(326, 279);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(289, 74);
+            this.groupBox3.Size = new System.Drawing.Size(253, 74);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Marca exame";
@@ -227,7 +227,7 @@
             this.groupBox4.Controls.Add(this.button4);
             this.groupBox4.Controls.Add(this.textBox3);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(31, 331);
+            this.groupBox4.Location = new System.Drawing.Point(31, 279);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(289, 74);
             this.groupBox4.TabIndex = 13;
@@ -264,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 426);
+            this.ClientSize = new System.Drawing.Size(913, 492);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.listView1);

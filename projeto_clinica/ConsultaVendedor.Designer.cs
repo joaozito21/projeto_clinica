@@ -50,7 +50,7 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.EDTvet);
-            this.groupBox2.Location = new System.Drawing.Point(442, 137);
+            this.groupBox2.Location = new System.Drawing.Point(12, 257);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(434, 93);
             this.groupBox2.TabIndex = 14;
@@ -95,7 +95,7 @@
             listViewItem1});
             this.listView1.Location = new System.Drawing.Point(12, 7);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(424, 299);
+            this.listView1.Size = new System.Drawing.Size(824, 233);
             this.listView1.TabIndex = 13;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -108,7 +108,7 @@
             // NomeVeterinario
             // 
             this.NomeVeterinario.Text = "NomeVeterinario";
-            this.NomeVeterinario.Width = 110;
+            this.NomeVeterinario.Width = 302;
             // 
             // CRMV
             // 
@@ -118,13 +118,13 @@
             // Endereço
             // 
             this.Endereço.Text = "Endereço";
-            this.Endereço.Width = 237;
+            this.Endereço.Width = 298;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(442, 7);
+            this.groupBox1.Location = new System.Drawing.Point(461, 265);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(414, 97);
             this.groupBox1.TabIndex = 12;
@@ -153,7 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 304);
+            this.ClientSize = new System.Drawing.Size(887, 374);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.groupBox1);

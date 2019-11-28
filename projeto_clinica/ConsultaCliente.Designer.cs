@@ -68,7 +68,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 19);
+            this.textBox1.Location = new System.Drawing.Point(124, 23);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(153, 36);
@@ -78,7 +78,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(160, 80);
+            this.button1.Location = new System.Drawing.Point(202, 65);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -89,7 +89,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Location = new System.Drawing.Point(3, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 13);
             this.label1.TabIndex = 5;
@@ -100,9 +100,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(604, 39);
+            this.groupBox1.Location = new System.Drawing.Point(12, 267);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(274, 118);
+            this.groupBox1.Size = new System.Drawing.Size(295, 94);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pesquisar";
@@ -113,7 +113,7 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.EdtIdCli);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(613, 179);
+            this.groupBox2.Location = new System.Drawing.Point(314, 281);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(254, 74);
             this.groupBox2.TabIndex = 7;
@@ -122,7 +122,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(200, 22);
+            this.button2.Location = new System.Drawing.Point(171, 44);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(41, 23);
             this.button2.TabIndex = 8;
@@ -132,19 +132,20 @@
             // 
             // EdtIdCli
             // 
-            this.EdtIdCli.Location = new System.Drawing.Point(106, 25);
+            this.EdtIdCli.Location = new System.Drawing.Point(18, 44);
             this.EdtIdCli.Name = "EdtIdCli";
-            this.EdtIdCli.Size = new System.Drawing.Size(88, 20);
+            this.EdtIdCli.Size = new System.Drawing.Size(122, 20);
             this.EdtIdCli.TabIndex = 7;
+            this.EdtIdCli.TextChanged += new System.EventHandler(this.EdtIdCli_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(116, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "ID DO CLIENTE";
+            this.label2.Text = "CODIGO DO CLIENTE";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // listView1
@@ -158,7 +159,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(553, 291);
+            this.listView1.Size = new System.Drawing.Size(826, 241);
             this.listView1.TabIndex = 8;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -192,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 343);
+            this.ClientSize = new System.Drawing.Size(879, 375);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

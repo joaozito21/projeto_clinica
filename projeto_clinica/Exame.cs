@@ -28,7 +28,7 @@ namespace projeto_clinica
             comando.Parameters.Add(new SqlParameter("@valor",valor));
            
             comando.ExecuteNonQuery();
-            MessageBox.Show("INSERIDO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("CADASTRO COM SUCESSO", "AVISO");
             conexao.Close();
         }
 
@@ -97,15 +97,16 @@ namespace projeto_clinica
 
        " inner join CLIENTES on  Consultas.nome_cli_con = CLIENTES.ID_CLI  " +
 
-       " inner join cat_exame on exame.id_cat_exa = cat_exame.id_cat_exame";
+       " inner join cat_exame on exame.id_cat_exa = cat_exame.id_cat_exame" +
+        " where pag_exame = 0    ";
             else
             {
 
-                comando.CommandText = "select exame.id_exame,CLIENTES.NOME_CLI,exame.data_exa,cat_exame.valor FROM exame "+
-                                     " INNER JOIN Consultas on exame.id_con = Consultas.id_con "+
-                                     " inner join CLIENTES on  Consultas.nome_cli_con = CLIENTES.ID_CLI"+
-                                     "  inner join cat_exame on exame.id_cat_exa = cat_exame.id_cat_exame "+
-                                      " where CLIENTES.NOME_CLI like '%"+texto+"%'";
+                comando.CommandText = "select exame.id_exame,CLIENTES.NOME_CLI,exame.data_exa,cat_exame.valor FROM exame " +
+                                     " INNER JOIN Consultas on exame.id_con = Consultas.id_con " +
+                                     " inner join CLIENTES on  Consultas.nome_cli_con = CLIENTES.ID_CLI" +
+                                     "  inner join cat_exame on exame.id_cat_exa = cat_exame.id_cat_exame " +
+                                      " where pag_exame =0 and CLIENTES.NOME_CLI like '%" + texto + "%'";
             }
 
 
@@ -196,7 +197,7 @@ namespace projeto_clinica
             comando.Parameters.Add(new SqlParameter("@id", id));
 
             comando.ExecuteNonQuery();
-            MessageBox.Show("INSERIDO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("CADASTRO COM SUCESSO", "AVISO");
         }
 
         public void FecharExame(int id)

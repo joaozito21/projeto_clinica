@@ -86,5 +86,17 @@ namespace projeto_clinica
             PesquisarExame pes = new PesquisarExame();
             pes.Show();
         }
+
+        private void ExamesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            relatorioMes rel = new relatorioMes();
+            rel.ShowDialog();
+        }
+
+        private void ConsultaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            relatCon rel = new relatCon();
+            rel.ShowDialog();
+        }
     }
 }

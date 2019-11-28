@@ -15,6 +15,36 @@ namespace projeto_clinica
     {
         string caminho = "Data Source=JOAO-PC\\SQLEXPRESS; Initial Catalog=projeto_linguagem;Integrated Security=SSPI;";
 
+        public List<string> CarregaaniLis(string TEXTO)
+        {
+
+            SqlConnection conexao = new SqlConnection(caminho);
+            List<string> LISTA = new List<string>();
+            conexao.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+
+            comando.CommandText = "select NOME_ANI from ANIMAIS "+
+                            "   left join CLIENTES on ANIMAIS.id_cli_ani = CLIENTES.ID_CLI " +
+                            "  where CLIENTES.NOME_CLI like '"+TEXTO+"'";
+
+
+
+
+            comando.CommandType = CommandType.Text;
+            SqlDataReader LINHA = comando.ExecuteReader();
+            if (LINHA != null)
+            {
+                while (LINHA.Read())
+                {
+                    LISTA.Add(LINHA.GetString(0));
+                }
+            }
+
+            return LISTA;
+
+        }
+
         public void AlterarDados(string nome, string nome_ani, string raca, string esp, string dat,int id_cli)
         {
             SqlConnection conexao = new SqlConnection(caminho);
@@ -32,7 +62,7 @@ namespace projeto_clinica
             comando.Parameters.Add(new SqlParameter("@dat", dat));
             comando.Parameters.Add(new SqlParameter("@id_cli", id_cli));
             comando.ExecuteNonQuery();
-            MessageBox.Show("ALTERADO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("ALTERADO CADASTRO COM SUCESSO", "AVISO");
         }
         public void InserirDados(string nome,string nome_ani,string raca,string esp,string dat)
         {
@@ -51,7 +81,7 @@ namespace projeto_clinica
             comando.Parameters.Add(new SqlParameter("@dat",dat));
             comando.Parameters.Add(new SqlParameter("@id_cli",id_cli));
             comando.ExecuteNonQuery();
-            MessageBox.Show("INSERIDO REGISTRO COM SUCESSO", "AVISO");
+            MessageBox.Show("CADASTRO SALVO COM SUCESSO", "AVISO");
         }
 
         public string nome_ani { get; set; }

@@ -49,7 +49,8 @@ namespace projeto_clinica
         private void Button1_Click(object sender, EventArgs e)
         {
             EditarVeterinario vet = new EditarVeterinario(int.Parse(EDTvet.Text));
-            vet.Show();
+            vet.ShowDialog();
+            DadosListView();
         }
 
         private void TextBox1_KeyUp(object sender, KeyEventArgs e)

@@ -182,7 +182,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>projeto_linguagemDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="projeto_linguagemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projeto_linguagemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projeto_linguagemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projeto_linguagemDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="relatCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relatCon.Designer.cs">
+      <DependentUpon>relatCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="relatorioMes.Designer.cs">
+      <DependentUpon>relatorioMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Usuario.cs" />
     <Compile Include="Veterinario.cs" />
     <EmbeddedResource Include="CadastroAnimal.resx">
@@ -254,6 +276,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="relatCon.resx">
+      <DependentUpon>relatCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorioMes.resx">
+      <DependentUpon>relatorioMes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="projeto_linguagemDataSet.xsc">
       <DependentUpon>projeto_linguagemDataSet.xsd</DependentUpon>
     </None>
@@ -275,6 +303,28 @@
     </None>
     <None Include="projeto_linguagemDataSet1.xss">
       <DependentUpon>projeto_linguagemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projeto_linguagemDataSet2.xsc">
+      <DependentUpon>projeto_linguagemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projeto_linguagemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projeto_linguagemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projeto_linguagemDataSet2.xss">
+      <DependentUpon>projeto_linguagemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projeto_linguagemDataSet3.xsc">
+      <DependentUpon>projeto_linguagemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projeto_linguagemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projeto_linguagemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projeto_linguagemDataSet3.xss">
+      <DependentUpon>projeto_linguagemDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

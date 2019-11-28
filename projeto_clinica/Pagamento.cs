@@ -69,7 +69,7 @@ namespace projeto_clinica
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexao;
             ;
-            comando.CommandText = "insert into pagamentos values(@form,@valor,getdate(),@id)";
+            comando.CommandText = "insert into pagamentos values(@form,@valor,getdate(),@id,0)";
             comando.Parameters.Add(new SqlParameter("@form", form));
             comando.Parameters.Add(new SqlParameter("@valor",val));
             comando.Parameters.Add(new SqlParameter("@id", id));

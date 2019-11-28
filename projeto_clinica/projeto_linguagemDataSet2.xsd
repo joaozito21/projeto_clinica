@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="projeto_linguagemDataSet2" targetNamespace="http://tempuri.org/projeto_linguagemDataSet2.xsd" xmlns:mstns="http://tempuri.org/projeto_linguagemDataSet2.xsd" xmlns="http://tempuri.org/projeto_linguagemDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="projeto_linguagemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="projeto_linguagemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.projeto_clinica.Properties.Settings.GlobalReference.Default.projeto_linguagemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="relatPagExaTableAdapter" GeneratorDataComponentClassName="relatPagExaTableAdapter" Name="relatPagExa" UserDataComponentName="relatPagExaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="projeto_linguagemConnectionString (Settings)" DbObjectName="projeto_linguagem.dbo.relatPagExa" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [forma de pagamento], [data da forma de pagamento], [valor ] FROM dbo.relatPagExa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="forma de pagamento" DataSetColumn="forma de pagamento" />
+              <Mapping SourceColumn="data da forma de pagamento" DataSetColumn="data da forma de pagamento" />
+              <Mapping SourceColumn="valor " DataSetColumn="valor " />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="projeto_linguagemDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="projeto_linguagemDataSet2" msprop:Generator_UserDSName="projeto_linguagemDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="relatPagExa" msprop:Generator_TableClassName="relatPagExaDataTable" msprop:Generator_TableVarName="tablerelatPagExa" msprop:Generator_TablePropName="relatPagExa" msprop:Generator_RowDeletingName="relatPagExaRowDeleting" msprop:Generator_RowChangingName="relatPagExaRowChanging" msprop:Generator_RowEvHandlerName="relatPagExaRowChangeEventHandler" msprop:Generator_RowDeletedName="relatPagExaRowDeleted" msprop:Generator_UserTableName="relatPagExa" msprop:Generator_RowChangedName="relatPagExaRowChanged" msprop:Generator_RowEvArgName="relatPagExaRowChangeEvent" msprop:Generator_RowClassName="relatPagExaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="forma_x0020_de_x0020_pagamento" msprop:Generator_ColumnVarNameInTable="columnforma_de_pagamento" msprop:Generator_ColumnPropNameInRow="forma_de_pagamento" msprop:Generator_ColumnPropNameInTable="forma_de_pagamentoColumn" msprop:Generator_UserColumnName="forma de pagamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="data_x0020_da_x0020_forma_x0020_de_x0020_pagamento" msprop:Generator_ColumnVarNameInTable="columndata_da_forma_de_pagamento" msprop:Generator_ColumnPropNameInRow="data_da_forma_de_pagamento" msprop:Generator_ColumnPropNameInTable="data_da_forma_de_pagamentoColumn" msprop:Generator_UserColumnName="data da forma de pagamento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor_x0020_" msprop:Generator_ColumnVarNameInTable="columnvalor_" msprop:Generator_ColumnPropNameInRow="valor_" msprop:Generator_ColumnPropNameInTable="valor_Column" msprop:Generator_UserColumnName="valor " type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

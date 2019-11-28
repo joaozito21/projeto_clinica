@@ -30,6 +30,35 @@ namespace projeto_clinica
 
         public string tel_vet { get; set; }
 
+
+        public List<string> CarregaVettLis()
+        {
+
+            SqlConnection conexao = new SqlConnection(caminho);
+            List<string> LISTA = new List<string>();
+            conexao.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+
+            comando.CommandText = "SELECT NOME_VET FROM	VETERINARIOS";
+
+
+
+
+            comando.CommandType = CommandType.Text;
+            SqlDataReader LINHA = comando.ExecuteReader();
+            if (LINHA != null)
+            {
+                while (LINHA.Read())
+                {
+                    LISTA.Add(LINHA.GetString(0));
+                }
+            }
+
+            return LISTA;
+
+        }
+
         public SqlDataReader CarregaCliLis(string texto = " ")
         {
 

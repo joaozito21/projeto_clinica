@@ -33,12 +33,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.edtMot = new System.Windows.Forms.TextBox();
-            this.edtNomeVet = new System.Windows.Forms.TextBox();
-            this.edtNomeAni = new System.Windows.Forms.TextBox();
-            this.edtNomeCli = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.mascData = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.edtNomeVet = new System.Windows.Forms.ComboBox();
+            this.etdNomeCli = new System.Windows.Forms.ComboBox();
+            this.edtNomeAni = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -84,27 +84,6 @@
             this.edtMot.Size = new System.Drawing.Size(228, 20);
             this.edtMot.TabIndex = 4;
             // 
-            // edtNomeVet
-            // 
-            this.edtNomeVet.Location = new System.Drawing.Point(133, 77);
-            this.edtNomeVet.Name = "edtNomeVet";
-            this.edtNomeVet.Size = new System.Drawing.Size(228, 20);
-            this.edtNomeVet.TabIndex = 5;
-            // 
-            // edtNomeAni
-            // 
-            this.edtNomeAni.Location = new System.Drawing.Point(114, 51);
-            this.edtNomeAni.Name = "edtNomeAni";
-            this.edtNomeAni.Size = new System.Drawing.Size(247, 20);
-            this.edtNomeAni.TabIndex = 6;
-            // 
-            // edtNomeCli
-            // 
-            this.edtNomeCli.Location = new System.Drawing.Point(114, 22);
-            this.edtNomeCli.Name = "edtNomeCli";
-            this.edtNomeCli.Size = new System.Drawing.Size(247, 20);
-            this.edtNomeCli.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -133,17 +112,42 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // edtNomeVet
+            // 
+            this.edtNomeVet.FormattingEnabled = true;
+            this.edtNomeVet.Location = new System.Drawing.Point(133, 77);
+            this.edtNomeVet.Name = "edtNomeVet";
+            this.edtNomeVet.Size = new System.Drawing.Size(241, 21);
+            this.edtNomeVet.TabIndex = 11;
+            // 
+            // etdNomeCli
+            // 
+            this.etdNomeCli.FormattingEnabled = true;
+            this.etdNomeCli.Location = new System.Drawing.Point(114, 22);
+            this.etdNomeCli.Name = "etdNomeCli";
+            this.etdNomeCli.Size = new System.Drawing.Size(260, 21);
+            this.etdNomeCli.TabIndex = 12;
+            this.etdNomeCli.SelectedIndexChanged += new System.EventHandler(this.EtdNomeCli_SelectedIndexChanged);
+            // 
+            // edtNomeAni
+            // 
+            this.edtNomeAni.FormattingEnabled = true;
+            this.edtNomeAni.Location = new System.Drawing.Point(124, 49);
+            this.edtNomeAni.Name = "edtNomeAni";
+            this.edtNomeAni.Size = new System.Drawing.Size(250, 21);
+            this.edtNomeAni.TabIndex = 13;
+            // 
             // Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 215);
+            this.Controls.Add(this.edtNomeAni);
+            this.Controls.Add(this.etdNomeCli);
+            this.Controls.Add(this.edtNomeVet);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mascData);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.edtNomeCli);
-            this.Controls.Add(this.edtNomeAni);
-            this.Controls.Add(this.edtNomeVet);
             this.Controls.Add(this.edtMot);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -163,11 +167,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox edtMot;
-        private System.Windows.Forms.TextBox edtNomeVet;
-        private System.Windows.Forms.TextBox edtNomeAni;
-        private System.Windows.Forms.TextBox edtNomeCli;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mascData;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox edtNomeVet;
+        private System.Windows.Forms.ComboBox etdNomeCli;
+        private System.Windows.Forms.ComboBox edtNomeAni;
     }
 }

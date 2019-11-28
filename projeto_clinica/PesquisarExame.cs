@@ -58,7 +58,8 @@ namespace projeto_clinica
         private void Button1_Click(object sender, EventArgs e)
         {
             PagamentoExame test = new PagamentoExame(int.Parse(textBox2.Text));
-            test.Show();
+            test.ShowDialog();
+            DadosListView();
         }
     }
 }
